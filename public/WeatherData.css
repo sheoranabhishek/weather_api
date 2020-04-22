@@ -1,0 +1,39 @@
+body
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://wallpapertag.com/wallpaper/full/a/d/8/8613-amazing-dark-background-2560x1600-download-free.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    color: white;
+    overflow: hidden;
+}
+
+
+.container
+{
+    background-color: rgba(0 , 0 , 0 , 0.3);
+    text-align: center;
+    margin-top: 30px;
+    padding: 90px;
+}
+
+img
+{
+    background-color: beige;
+    border-radius: 50%;
+    margin: 50px;
+}
+
+h2 
+{
+    padding: 30px;
+}
+
+.city_name
+{
+    font-size: 4rem;
+}

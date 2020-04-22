@@ -1,0 +1,26 @@
+<%- include ('partials/header') %>
+<link rel="stylesheet" href="/WeatherData.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="city_name"><%= Data["name"].toUpperCase() %></h1>
+        <div class="coordinates">
+            <p>Latitude: <span><%= Data["coord"]["lat"]%></span> </p>
+            <p>Longitude: <span><%= Data["coord"]["lon"]%></span> </p>
+        </div>
+
+        <div class="weather">
+            <h1>Weather Report</h1>
+            <h2>Temperature : <%= Data["main"]["temp"]  %>&deg C </h2>
+            <h4>Max temp : <%= Data["main"]["temp_max"]  %>&deg C </h4>
+            <h4>Min temp : <%= Data["main"]["temp_min"]  %>&deg C </h4>
+            <img src="http://openweathermap.org/img/wn/<%=Data["weather"][0]["icon"]  %>@2x.png" alt="">
+            <p class=" maindescription"> <%= Data["weather"][0]["main"].toUpperCase()  %> </p>
+            <p class=" smalldescriptiom"> <%= Data["weather"][0]["description"].toUpperCase()  %> </p>
+            <h3>Wind Speed : <%= Data["wind"]["speed"] %>m/s </h3>
+        </div>
+
+
+    </div>
+    <%- include ('partials/footer') %>
